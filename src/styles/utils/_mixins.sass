@@ -2,7 +2,7 @@
 @use 'sass:string'
 
 @keyframes noise-anim
-    $steps:  25 
+    $steps:  30
     @for $i from 0 through $steps
         #{percentage($i*(1/$steps))}
-            clip: rect(random(10 * 250)+px, 4000px, random(10 * 400)+px, 0px)
+            clip: rect(random(10 * 100)+px, 4000px, random(10 * 200)+px, 0px)

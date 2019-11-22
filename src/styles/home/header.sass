@@ -1,4 +1,4 @@
-@import '../utils/_mixins'
+@import '../utils'
 
 .home__header-splash
     height: 100vh
@@ -20,6 +20,7 @@
 .home__header-splash__logo
     text-align: center
     font-size: 22em
+    font-family: $logo-font
     posiiton: relative
 
     &::before, &::after
@@ -32,15 +33,15 @@
     
     &::before
         left: -3px
-        text-shadow: -3px 0 hotpink 
-        clip: rect(20px, 1000px, 250px, 0px)
-        animation: noise-anim 1.6s infinite linear alternate-reverse
+        text-shadow: -1px 0 $pink
+        clip: rect(0px, 900px, 0px, 0px)
+        animation: noise-anim 3s infinite linear alternate-reverse
 
     &::after
-        text-shadow: 3px 0 lightblue
+        text-shadow: 1px 0 $blue
         left: 3px
-        clip: rect(255px, 2000px, 900px, 20px)
-        animation: noise-anim 1.6s infinite linear alternate-reverse
+        clip: rect(0px, 900px, 0px, 0px)
+        animation: noise-anim 3s infinite linear alternate-reverse
 
 
 .home__header-splash__tagline
