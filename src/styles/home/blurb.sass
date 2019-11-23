@@ -1,24 +1,37 @@
 @import '../utils'
 
 .home__blurb
-    height: 100vh
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
+    padding: 5em 0
+
+    +tablet-up
+        height: 100vh
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
 
 .home__blurb__content
-    max-width: 55em
+    max-width: 90%
     margin: 0 auto
+
+    +desktop-up
+        max-width: 55em
 
     p
         font-family: $text-font
-        font-size: 1.2em
-        line-height: 1.8
+        font-size: 1.1em
+        line-height: 1.5
         margin-bottom: 2em
 
+
         &:last-child
+
             margin-bottom: 0
+
+        +tablet-up
+            font-size: 1.2em
+            line-height: 1.8
+            margin-bottom: 2em
 
     .strike
         text-decoration: line-through
@@ -32,32 +45,48 @@
     cursor: pointer
     position: relative
 
-    &.blue
-        color: $blue
-
-    &.pink
+    &.pizza
         color: $pink
 
-    figure
-        visibility: hidden
-        opacity: 0
-        position: absolute
-        top: -240px
-        left: 1em
-        padding: 0
-        margin: 0
-        border: 3px solid 
-        border-radius: 5px 
-        width: 300px
-        heigh: 200px
-        transition: visibility 0s, opacity .2s ease-in
+    &.paris
+        color: $blue
 
-        img
-            display: block
-            max-width: 100%
-            height: auto
-    
     &:hover
         figure 
             visibility: visible
             opacity: 1
+
+.blurb__picture-link__figure
+    visibility: hidden
+    opacity: 0
+    position: absolute
+    top: -110px
+    left: 0
+    max-width: 150px
+    width: 150px
+    height: 100px
+    max-height: 100px
+    padding: 0
+    margin: 0
+    border-width: 2px
+    border-style: solid
+    border-radius: 5px 
+    transition: visibility 0s, opacity .2s ease-in
+
+    &.paris-pic
+        left: -3em
+
+    +desktop-up
+        width: 300px
+        heigh: 200px
+        max-height: 200px
+        top: -240px
+        left: 1em
+        border-width: 3px
+
+    img
+        display: block
+        max-width: 100%
+        width: 100%
+        height: 100%
+    

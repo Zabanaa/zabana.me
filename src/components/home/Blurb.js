@@ -7,28 +7,18 @@ const HomeHeader = () => (
       <p>
         Oh hello there and welcome ! My name is <strong>Karim Cheurfi</strong>{" "}
         (pronounced sheriff-ee, also this is a{" "}
-        <span className="blurb__picture-link pink">
+        <span className="blurb__picture-link pizza">
           picture of me enjoying a pizza
-          <figure>
-            <img
-              src="http://lorempixel.com/400/300/"
-              width="400"
-              height="300"
-              alt="picture"
-            />
+          <figure className="blurb__picture-link__figure pizza-pic">
+            <img src="http://lorempixel.com/400/300/" alt="pizza" />
           </figure>
         </span>
         ). I'm a <strong>full stack software developer</strong> (currently)
         based in{" "}
-        <span className="blurb__picture-link blue">
+        <span className="blurb__picture-link paris">
           Paris, France
-          <figure>
-            <img
-              src="http://lorempixel.com/400/300/"
-              width="400"
-              height="300"
-              alt="picture"
-            />
+          <figure className="blurb__picture-link__figure paris-pic">
+            <img src="http://lorempixel.com/400/300/" alt="paris" />
           </figure>
         </span>
         . I've been writing code professionally for <strong>5 years</strong>{" "}

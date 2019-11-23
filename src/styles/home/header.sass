@@ -2,6 +2,7 @@
 
 .home__header-splash
     height: 100vh
+    width: 100%
     background-color: #121110
     color: white
     display: flex
@@ -11,17 +12,25 @@
 
 
 .home__header-splash__container
-    max-width: 80%
+
     width: 100%
     margin: 0 auto
     position: relative
+    max-width: 90%
+
+    +desktop-up
+        max-width: 80%
 
 
 .home__header-splash__logo
     text-align: center
-    font-size: 22em
     font-family: $logo-font
     posiiton: relative
+    font-size: 7.5em
+
+    +desktop-up
+        font-size: 22em
+
 
     &::before, &::after
         content: attr(data-name)
