@@ -1,0 +1,60 @@
+@import '../utils'
+
+.projects
+    height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    font-family: $text-font
+    background: #fafafa
+
+.projects__title
+    color: $black
+    font-size: 3em
+    margin-bottom: 3rem
+    text-decoration: underline
+
+.projects__container
+    max-width: 57em
+    width: 100%
+    margin: 0 auto
+
+.projects__list
+    list-style: none
+
+
+.projects__list__project
+    margin-bottom: 2em
+
+    &:nth-child(1) .project__name
+        color: darken($blue, 10%)
+        
+    &:nth-child(2) .project__name
+        color: darken($fuschia, 5%)
+        color: $fuschia
+        
+    &:nth-child(3) .project__name
+        color: $black
+        
+    &:nth-child(4) .project__name
+        color: $light-purple
+
+    &:nth-child(5) .project__name
+        color: darken($yellow, 14%)
+        
+
+    &:last-child
+        margin-bottom: 0
+
+
+.project__name
+    font-size: 2em
+    font-weight: bold
+    transition: text-decoration.2s ease-out
+    text-decoration: none
+
+
+.project__description
+    font-size: 1.2em
+    line-height: 1.8
