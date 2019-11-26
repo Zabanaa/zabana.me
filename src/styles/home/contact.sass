@@ -30,12 +30,22 @@
             margin-bottom: 0
 
 
+.contact__content a
+    transition: color .2s ease-out 
+
+
 .contact__content .cv
     color: $fuschia
+
+    &:hover
+        color: darken($fuschia, 8%)    
 
 
 .contact__content .email
     color: $blue
+
+    &:hover
+        color: darken($blue, 8%)    
 
 
 .contact__facts
@@ -49,9 +59,9 @@
 .contact__facts ul
 
     li
-        // font-size: .95em
         list-style: none
         margin-bottom: .8rem
 
         &:before
             content: "* "
+            font-weight: bold

@@ -34,13 +34,13 @@ const Contact = () => {
         <div className="contact__facts">
           <ul>
             <li>I obsess over perfume</li>
-            <li>I like Photography</li>
+            <li>I like street photography</li>
             <li>I think Livepool will bottle it</li>
             <li>I choose SASS over SCSS</li>
           </ul>
           <ul>
             <li>I have a weird obsession with English culture</li>
-            <li>I like Vim mode</li>
+            <li>I like vim mode</li>
             <li>I like 70's and 80's movies</li>
             <li>I don't think Ryan Gosling is all that.</li>
           </ul>
