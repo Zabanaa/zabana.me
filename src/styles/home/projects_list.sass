@@ -26,35 +26,40 @@
 
 .projects__list__project
     margin-bottom: 2em
-
-    &:nth-child(1) .project__name
-        color: darken($blue, 10%)
-        
-    &:nth-child(2) .project__name
-        color: darken($fuschia, 5%)
-        color: $fuschia
-        
-    &:nth-child(3) .project__name
-        color: $black
-        
-    &:nth-child(4) .project__name
-        color: $light-purple
-
-    &:nth-child(5) .project__name
-        color: darken($yellow, 14%)
-        
+    color: $black
 
     &:last-child
         margin-bottom: 0
 
 
 .project__name
+    $color: $link-blue
     font-size: 2em
     font-weight: bold
-    transition: text-decoration.2s ease-out
-    text-decoration: none
+    text-decoration: underline
+    color: $color
+    transition: color .2s ease-out
+
+    &:hover
+        color: darken($color, 4%)
 
 
 .project__description
     font-size: 1.2em
     line-height: 1.8
+
+
+.projects__cta
+    $color: $fuschia
+    margin-top: 1.5em
+    font-size: 1.25em
+    font-style: italic
+    
+    a
+        color: $color
+        font-weight: bold
+        transition: color .2s ease-out
+
+        &:hover
+            color: darken($color, 4%)
+

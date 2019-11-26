@@ -19,7 +19,9 @@ const ProjectsList = () => {
   return (
     <section className="projects">
       <div className="projects__container">
-        <h2 className="projects__title">Check out some of my projects:</h2>
+        <h2 className="projects__title">
+          Here are some of my current projects:
+        </h2>
         <ul className="projects__list">
           {projects.allProject.nodes.map((project, idx) => {
             return (
@@ -31,6 +33,11 @@ const ProjectsList = () => {
             )
           })}
         </ul>
+        <p className="projects__cta">
+          Have a look at my{" "}
+          <a href="https://github.com/Zabanaa">GitHub profile</a> for even more
+          projects !
+        </p>
       </div>
     </section>
   )
