@@ -1,0 +1,57 @@
+@import '../utils'
+
+
+.contact
+    height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    font-family: $text-font
+
+
+.contact__container
+    max-width: 57em
+    width: 100%
+    margin: 0 auto
+
+
+.contact__content
+    line-height: 1.8
+    font-size: 1.29em
+
+    a
+        font-weight: bold
+
+    p
+        margin-bottom: 1.5em
+
+        &:last-child
+            margin-bottom: 0
+
+
+.contact__content .cv
+    color: $fuschia
+
+
+.contact__content .email
+    color: $blue
+
+
+.contact__facts
+    margin-top: 2em
+    font-size: 1.29em
+    display: flex
+    justify-content: space-between
+    
+
+
+.contact__facts ul
+
+    li
+        // font-size: .95em
+        list-style: none
+        margin-bottom: .8rem
+
+        &:before
+            content: "* "
