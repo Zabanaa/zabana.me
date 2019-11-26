@@ -2,7 +2,7 @@
 
 
 footer
-    padding: 1em 0
+    padding: 1.5em 0
     background: $black
     color: white
 
@@ -11,17 +11,14 @@ footer
 
 
 .footer__container
+    position: relative
     width: 90%
     margin: 0 auto
 
     display: flex
     flex-direction: column
-    font-family: $text-font
-    position: relative
-    font-size: 1em
 
     +desktop-up
-        font-size: 1.2em
         align-items: center
         justify-content: space-between
         flex-direction: row
@@ -30,7 +27,7 @@ footer
 
 
 .footer__logo
-    font-size: 2em
+    font-size: 2.2em
     font-weight: bold
     font-family: $logo-font
     position: relative
@@ -39,3 +36,13 @@ footer
 
     +tablet-up
         font-size: 3em
+    
+
+.footer__about
+    font-size: 1.1em
+    line-height: 1.7
+    font-family: $text-font
+
+    +tablet-up
+        font-size: 1.2em
+        line-height: 1

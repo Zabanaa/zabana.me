@@ -9,7 +9,9 @@ const Footer = () => {
           {" "}
           カリム
         </span>
-        <p>Made with code at my local library.</p>
+        <p className="footer__about">
+          Made while listening to Eddie Murphy's albums.
+        </p>
       </div>
     </footer>
   )

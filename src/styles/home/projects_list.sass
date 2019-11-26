@@ -1,32 +1,50 @@
 @import '../utils'
 
 .projects
-    height: 100vh
+    padding: 2em 0
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
     font-family: $text-font
-    background: #fafafa
+    background: $light-gray
+
+    +tablet-up
+        height: 100vh
+        padding: 0
 
 .projects__title
     color: $black
-    font-size: 3em
-    margin-bottom: 3rem
     text-decoration: underline
+    font-size: 1.5em
+    line-height: 1.6
+    margin-bottom: 1.5rem
+
+    +tablet-up
+        font-size: 3em
+        margin-bottom: 3rem
+
 
 .projects__container
-    max-width: 57em
-    width: 100%
+    max-width: 85%
     margin: 0 auto
+
+    +tablet-up
+        max-width: 57em
+        width: 100%
+
 
 .projects__list
     list-style: none
 
 
 .projects__list__project
-    margin-bottom: 2em
+    margin-bottom: 1.5em
     color: $black
+
+    +tablet-up
+        margin-bottom: 2em
+
 
     &:last-child
         margin-bottom: 0
@@ -34,7 +52,7 @@
 
 .project__name
     $color: $link-blue
-    font-size: 2em
+    font-size: 1.39em
     font-weight: bold
     text-decoration: underline
     color: $color
@@ -43,17 +61,25 @@
     &:hover
         color: darken($color, 4%)
 
+    +tablet-up
+        font-size: 2em
+
 
 .project__description
-    font-size: 1.2em
-    line-height: 1.8
+    font-size: 1.1em
+    line-height: 1.7
+
+    +tablet-up
+        font-size: 1.2em
+        line-height: 1.8
 
 
 .projects__cta
     $color: $fuschia
-    margin-top: 1.5em
-    font-size: 1.25em
     font-style: italic
+    margin-top: 1em
+    font-size: 1.1em
+    line-height: 1.7
     
     a
         color: $color
@@ -63,3 +89,7 @@
         &:hover
             color: darken($color, 4%)
 
+    +tablet-up
+        margin-top: 1.5em
+        font-size: 1.25em
+        line-height: 1

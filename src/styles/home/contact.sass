@@ -2,23 +2,33 @@
 
 
 .contact
-    height: 100vh
+    padding: 2em 0
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
     font-family: $text-font
 
+    +tablet-up
+        height: 100vh
+        padding: 0
+
 
 .contact__container
-    max-width: 57em
-    width: 100%
+    max-width: 85%
     margin: 0 auto
+
+    +tablet-up
+        max-width: 57em
+        width: 100%
 
 
 .contact__content
-    line-height: 1.8
-    font-size: 1.29em
+    font-size: 1.1em
+    line-height: 1.7
+    +tablet-up
+        font-size: 1.29em
+        line-height: 1.8
 
     a
         font-weight: bold
@@ -49,10 +59,17 @@
 
 
 .contact__facts
-    margin-top: 2em
-    font-size: 1.29em
+    margin-top: 1em
     display: flex
-    justify-content: space-between
+    flex-direction: column
+    font-size: 1.1em
+    line-height: 1.7
+
+    +tablet-up
+        margin-top: 2em
+        flex-direction: row
+        justify-content: space-between
+        font-size: 1.29em
     
 
 
