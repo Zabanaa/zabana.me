@@ -2,26 +2,40 @@
 
 
 footer
-    padding: 2em 0
+    padding: 1em 0
     background: $black
     color: white
 
+    +tablet-up
+        padding: 2em 0
+
 
 .footer__container
-    max-width: 57em
-    width: 100%
+    width: 90%
     margin: 0 auto
+
     display: flex
-    align-items: center
-    justify-content: space-between
+    flex-direction: column
     font-family: $text-font
-    font-size: 1.2em
     position: relative
+    font-size: 1em
+
+    +desktop-up
+        font-size: 1.2em
+        align-items: center
+        justify-content: space-between
+        flex-direction: row
+        max-width: 57em
+        width: 100%
 
 
 .footer__logo
-    font-size: 3em
+    font-size: 2em
     font-weight: bold
     font-family: $logo-font
     position: relative
     text-shadow: 2.5px 0 $fuschia, -2.5px 0 $blue
+    margin-bottom: 1rem
+
+    +tablet-up
+        font-size: 3em
