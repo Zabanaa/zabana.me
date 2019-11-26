@@ -36,7 +36,7 @@ const ProjectsList = () => {
         <p className="projects__cta">
           Have a look at my{" "}
           <a href="https://github.com/Zabanaa">GitHub profile</a> for even more
-          projects !
+          cool stuff !
         </p>
       </div>
     </section>
