@@ -13,23 +13,32 @@
     +tablet-up
         height: 100vh
 
+    +tablet-portrait
+        height: 44vh
+
 
 .home__header-splash__container
 
     position: relative
-    max-width: 57em 
-    width: 100%
+    max-width: 85%
     margin: 0 auto
 
     +desktop-up
-        max-width: 80%
+        max-width: 57em 
+        width: 100%
 
 
 .home__header-splash__logo
     text-align: center
     font-family: $logo-font
     posiiton: relative
-    font-size: 7em
+    font-size: 6.37em
+
+    +tablet-up
+        font-size: 17em
+
+    +tablet-portrait
+        font-size: 13em
 
     +desktop-up
         font-size: 22em

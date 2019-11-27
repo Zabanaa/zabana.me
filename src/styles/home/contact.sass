@@ -12,6 +12,10 @@
     +tablet-up
         height: 100vh
         padding: 0
+    
+    +tablet-portrait
+        height: auto
+        padding: 4em 0
 
 
 .contact__container
@@ -21,14 +25,23 @@
     +tablet-up
         max-width: 57em
         width: 100%
+    
+    +tablet-portrait
+        max-width: 85%
+        margin: 0 auto
 
 
 .contact__content
     font-size: 1.1em
-    line-height: 1.7
+    line-height: 1.6
+
     +tablet-up
         font-size: 1.29em
         line-height: 1.8
+
+    +tablet-portrait
+        font-size: 1.18em
+        line-height: 1.7
 
     a
         font-weight: bold
@@ -38,6 +51,15 @@
 
         &:last-child
             margin-bottom: 0
+
+
+.content__flags
+    list-style: none
+
+    li
+        display: inline
+        margin-right: 1em
+        font-size: 1.1em
 
 
 .contact__content a
@@ -71,6 +93,8 @@
         justify-content: space-between
         font-size: 1.29em
     
+    +tablet-portrait
+        flex-direction: column
 
 
 .contact__facts ul

@@ -9,7 +9,11 @@
     font-family: $text-font
     background: $light-gray
 
-    +tablet-up
+    +tablet-landscape
+        height: 100vh
+        padding: 0
+
+    +desktop-up
         height: 100vh
         padding: 0
 
@@ -24,12 +28,20 @@
         font-size: 3em
         margin-bottom: 3rem
 
+    +tablet-portrait
+        font-size: 1.7em
+        margin-bottom: 1rem
+
 
 .projects__container
     max-width: 85%
     margin: 0 auto
 
-    +tablet-up
+    +tablet-landscape
+        max-width: 57em
+        width: 100%
+
+    +desktop-up
         max-width: 57em
         width: 100%
 
@@ -45,6 +57,8 @@
     +tablet-up
         margin-bottom: 2em
 
+    +tablet-portrait
+        margin-bottom: 1.7rem
 
     &:last-child
         margin-bottom: 0
@@ -64,6 +78,9 @@
     +tablet-up
         font-size: 2em
 
+    +tablet-portrait
+        font-size: 1.5em
+
 
 .project__description
     font-size: 1.1em
@@ -72,6 +89,9 @@
     +tablet-up
         font-size: 1.2em
         line-height: 1.8
+
+    +tablet-portrait
+        font-size: 1.1em
 
 
 .projects__cta
@@ -93,3 +113,8 @@
         margin-top: 1.5em
         font-size: 1.25em
         line-height: 1
+
+    +tablet-portrait
+        margin-top: 1em
+        font-size: 1.1em
+        line-height: 1.5
