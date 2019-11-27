@@ -9,39 +9,56 @@
     justify-content: center
     font-family: $text-font
 
-    +tablet-up
+    +iphone678-landscape
+        padding: 3em 0
+
+    +ipad
+        padding: 3em 0
+
+    +ipad-landscape
+        padding: 4em 0
+
+    +desktop-up
         height: 100vh
         padding: 0
-    
-    +tablet-portrait
-        height: auto
-        padding: 4em 0
 
 
 .contact__container
     max-width: 85%
     margin: 0 auto
 
-    +tablet-up
+    +iphone678-landscape
+        max-width: 90%
+
+    +ipad
+        max-width: 90%
+
+    +ipad-landscape
+        max-width: 54em
+
+    +desktop-up
         max-width: 57em
         width: 100%
-    
-    +tablet-portrait
-        max-width: 85%
-        margin: 0 auto
 
 
 .contact__content
     font-size: 1.1em
     line-height: 1.6
 
-    +tablet-up
+    +iphone678-landscape
+        font-size: 1.1em
+
+    +ipad
+        font-size: 1.1em
+        line-height: 1.6
+
+    +ipad-landscape
+        font-size: 1.2em
+        line-height: 1.7
+
+    +desktop-up
         font-size: 1.29em
         line-height: 1.8
-
-    +tablet-portrait
-        font-size: 1.18em
-        line-height: 1.7
 
     a
         font-weight: bold
@@ -55,11 +72,18 @@
 
 .content__flags
     list-style: none
+    margin-top: 1em
 
-    li
-        display: inline
-        margin-right: 1em
-        font-size: 1.1em
+    +iphone678-landscape
+        margin-top: .5em
+
+.content__flags li
+    display: inline
+    margin-right: 1em
+    font-size: 1.1em
+
+    +iphoneSE
+        line-height: 2
 
 
 .contact__content a
@@ -87,22 +111,23 @@
     font-size: 1.1em
     line-height: 1.7
 
-    +tablet-up
+    +ipad
+        flex-direction: column
+    
+    +ipad-landscape
+        font-size: 1.2em
+
+    +desktop-up
         margin-top: 2em
         flex-direction: row
         justify-content: space-between
         font-size: 1.29em
-    
-    +tablet-portrait
-        flex-direction: column
 
 
-.contact__facts ul
+.contact__facts ul li
+    list-style: none
+    margin-bottom: .8rem
 
-    li
-        list-style: none
-        margin-bottom: .8rem
-
-        &:before
-            content: "* "
-            font-weight: bold
+    &:before
+        content: "* "
+        font-weight: bold

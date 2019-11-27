@@ -2,52 +2,72 @@
 
 .home__blurb
     padding: 2em 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
 
-    +tablet-up
+    +iphone678-landscape
+        padding: 3em 0
+
+    +ipad
+        padding: 3em 0
+
+    +ipad-landscape
+        padding: 4em 0
+
+    +desktop-up
         padding: 0
         height: 100vh
-        display: flex
-        flex-direction: column
-        align-items: center
-        justify-content: center
     
-    +tablet-portrait
-        padding: 4em 0
-        height: auto
 
 .home__blurb__content
     max-width: 85%
     margin: 0 auto
+    
+    +ipad
+        max-width: 90%
+    
+    +ipad-landscape
+        max-width: 54em
+
+    +iphone678-landscape
+        max-width: 90%
 
     +desktop-up
         max-width: 57em
+    
+.home__blurb__content p
+    font-family: $text-font
+    font-size: 1.1em
+    line-height: 1.6
+    margin-bottom: 2em
 
-    p
-        font-family: $text-font
+    &:last-child
+        margin-bottom: 0
+
+    +iphone678-landscape
         font-size: 1.1em
-        line-height: 1.6
-        margin-bottom: 2em
-
-
-        &:last-child
-
-            margin-bottom: 0
-
-        +tablet-up
-            font-size: 1.29em
-            line-height: 1.8
-            margin-bottom: 2em
         
-        +tablet-portrait
-            font-size: 1.2em
-            line-height: 1.7
+    +ipad
+        font-size: 1.1em
+        line-height: 1.7
+
+    +ipad-landscape
+        font-size: 1.2em
+        line-height: 1.7
+
+    +desktop-up
+        font-size: 1.29em
+        line-height: 1.8
+        margin-bottom: 2em
 
     .strike
         text-decoration: line-through
     
-    a
-        color: $light-purple
-        font-weight: bold
+.home__blurb__content a
+    color: $light-purple
+    font-weight: bold
     
 .blurb__picture-link
     font-weight: bold

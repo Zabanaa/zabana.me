@@ -2,7 +2,6 @@
 
 .home__header-splash
     height: 33vh
-    width: 100%
     background-color: #121110
     color: white
     display: flex
@@ -10,11 +9,17 @@
     align-items: center
     justify-content: center
 
-    +tablet-up
+    +iphone678-landscape
         height: 100vh
 
-    +tablet-portrait
-        height: 44vh
+    +ipad
+        height: 40vh
+    
+    +ipad-landscape
+        height: 70vh
+
+    +desktop-up
+        height: 100vh
 
 
 .home__header-splash__container
@@ -34,16 +39,21 @@
     posiiton: relative
     font-size: 6.37em
 
-    +tablet-up
-        font-size: 17em
+    +iphoneSE
+        font-size: 5em
 
-    +tablet-portrait
+    +iphone678-landscape
+        font-size: 10em
+
+    +ipad
         font-size: 13em
 
+    +ipad-landscape
+        font-size: 18em
+
     +desktop-up
-        font-size: 22em
-
-
+        font-size: 19em
+    
     &::before, &::after
         content: attr(data-name)
         position: absolute
@@ -63,13 +73,3 @@
         left: 3px
         clip: rect(0px, 900px, 0px, 0px)
         animation: noise-anim 3.5s infinite linear alternate-reverse
-
-
-.home__header-splash__tagline
-    font-size: 1.4em
-    font-family: monospace
-    font-weight: bold
-    background: hotpink
-    color: white
-    padding: .2em
-    text-align: right

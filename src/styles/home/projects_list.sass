@@ -9,13 +9,19 @@
     font-family: $text-font
     background: $light-gray
 
-    +tablet-landscape
-        height: 100vh
-        padding: 0
+    +iphone678-landscape
+        padding: 3em 0
+
+    +ipad
+        padding: 3em 0
+
+    +ipad-landscape
+        padding: 4em 0
 
     +desktop-up
         height: 100vh
         padding: 0
+
 
 .projects__title
     color: $black
@@ -24,22 +30,38 @@
     line-height: 1.6
     margin-bottom: 1.5rem
 
-    +tablet-up
+    +iphone678-landscape
+        font-size: 1.5em
+        line-height: 1.6
+        margin-bottom: 1.5rem
+
+    +ipad
+        font-size: 1.6em
+        line-height: 1
+        margin-bottom: 1.5rem
+
+    +ipad-landscape
+        font-size: 2.2em
+        line-height: 1
+        margin-bottom: 2.5rem
+
+    +desktop-up
         font-size: 3em
         margin-bottom: 3rem
-
-    +tablet-portrait
-        font-size: 1.7em
-        margin-bottom: 1rem
 
 
 .projects__container
     max-width: 85%
     margin: 0 auto
 
-    +tablet-landscape
-        max-width: 57em
-        width: 100%
+    +iphone678-landscape
+        max-width: 90%
+
+    +ipad
+        max-width: 90%
+
+    +ipad-landscape
+        max-width: 54em
 
     +desktop-up
         max-width: 57em
@@ -54,11 +76,17 @@
     margin-bottom: 1.5em
     color: $black
 
-    +tablet-up
-        margin-bottom: 2em
+    +iphone678-landscape
+        margin-bottom: 1.5em
 
-    +tablet-portrait
+    +ipad
+        margin-bottom: 1.5rem
+
+    +ipad-landscape
         margin-bottom: 1.7rem
+
+    +desktop-up
+        margin-bottom: 2em
 
     &:last-child
         margin-bottom: 0
@@ -75,23 +103,35 @@
     &:hover
         color: darken($color, 4%)
 
-    +tablet-up
-        font-size: 2em
+    +iphone678-landscape
+        font-size: 1.39em
 
-    +tablet-portrait
+    +ipad
+        font-size: 1.4em
+
+    +ipad-landscape
         font-size: 1.5em
+
+    +desktop-up
+        font-size: 2em
 
 
 .project__description
     font-size: 1.1em
-    line-height: 1.7
+    line-height: 1.6
 
-    +tablet-up
+    +iphone678-landscape
+        font-size: 1.1em
+
+    +ipad
+        font-size: 1.1em
+
+    +ipad-landscape
+        font-size: 1.15em
+
+    +desktop-up
         font-size: 1.2em
         line-height: 1.8
-
-    +tablet-portrait
-        font-size: 1.1em
 
 
 .projects__cta
@@ -109,12 +149,20 @@
         &:hover
             color: darken($color, 4%)
 
-    +tablet-up
-        margin-top: 1.5em
-        font-size: 1.25em
-        line-height: 1
+    +iphone678-landscape
+        font-size: 1.1em
 
-    +tablet-portrait
+    +ipad
         margin-top: 1em
         font-size: 1.1em
         line-height: 1.5
+
+    +ipad-landscape
+        margin-top: 1.5em
+        font-size: 1.14em
+        line-height: 1
+
+    +desktop-up
+        margin-top: 1.5em
+        font-size: 1.25em
+        line-height: 1
