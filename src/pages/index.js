@@ -6,6 +6,8 @@ import ProjectsList from "../components/home/ProjectsList"
 import Contact from "../components/home/Contact"
 import Footer from "../components/home/Footer"
 
+import "../styles/emojis.css"
+
 const IndexPage = () => (
   <Layout>
     <HomeHeader />

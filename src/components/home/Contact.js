@@ -20,9 +20,30 @@ const Contact = () => {
             <a className="contact__link cv" href="/cv">
               ray-zoo-may
             </a>
-            . I'm currently open to freelance / full-time positions in Paris,
-            the UK, Germany, Sweden, The netherlands, Spain, Portugal and even
-            Canada !
+            . I'm currently open to freelance / full-time positions in
+            <ul className="content__flags">
+              <li>
+                <i class="em-svg em-fr"></i>
+              </li>
+              <li>
+                <i class="em-svg em-flag-england"></i>
+              </li>
+              <li>
+                <i class="em-svg em-flag-nl"></i>
+              </li>
+              <li>
+                <i class="em-svg em-de"></i>
+              </li>
+              <li>
+                <i class="em-svg em-flag-se"></i>
+              </li>
+              <li>
+                <i class="em-svg em-es"></i>
+              </li>
+              <li>
+                <i class="em-svg em-flag-ca"></i>
+              </li>
+            </ul>
           </p>
 
           <p>
