@@ -14,15 +14,9 @@ const HomeHeader = () => (
           </figure>
         </span>
         ). I'm a <strong>full stack software developer</strong> (currently)
-        based in{" "}
-        <span className="blurb__picture-link paris">
-          Paris, France
-          <figure className="blurb__picture-link__figure paris-pic">
-            <img src="http://lorempixel.com/400/300/" alt="paris" />
-          </figure>
-        </span>
-        . I've been writing code professionally for <strong>5 years</strong>{" "}
-        now, and as a hobby since I was 8. My languages of choice are{" "}
+        based in <strong>Paris, France</strong>. I've been writing code
+        professionally for <strong>5 years</strong> now, and as a hobby since I
+        was 8. My languages of choice are{" "}
         <strong className="fuschia">Python and Node.js</strong> (in that order)
         but I have a sweet spot in my heart for C (I should also probably
         mention that I've dabbled in Golang and PHP in the past,{" "}
