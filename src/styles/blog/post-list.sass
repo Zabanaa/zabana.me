@@ -1,0 +1,76 @@
+@import '../utils'
+
+.notes-list
+    padding: 1.5em 0
+
+    +ipad
+        padding: 2em 0
+
+    +desktop-up
+        padding: 3em 0
+
+
+.notes-list__container
+    max-width: 85%
+    margin: 0 auto
+
+    +desktop-up
+        max-width: 57em
+        width: 100%
+
+
+.notes-list__all-notes
+    list-style: none
+
+
+.notes-list__note
+    font-family: $text-font
+    margin-bottom: 1.5em
+
+    +ipad
+        margin-bottom: 1.8em
+
+    +desktop-up
+        margin-bottom: 2em
+
+    &:last-child
+        margin-bottom: 0 
+
+
+.notes-list__post-title
+
+    font-size: 1em
+    line-height: 1.2
+    margin-bottom: .2rem
+
+    +ipad
+        font-size: 1.2em
+        line-height: 1.4
+
+    +desktop-up
+        font-size: 1.4em
+        line-height: 1.5
+        margin-bottom: .5rem
+
+
+.notes-list__post-meta
+    color: #949494
+    font-weight: bold
+    font-size: .9em
+
+    +ipad
+        font-size: 1em
+
+    +desktop-up
+        font-size: 1.1em
+
+
+.notes-list__post-title a
+    text-decoration: none
+    color: $link-blue
+    transition: color .3s ease-out
+
+    &:hover
+        text-decoration: underline
+
+

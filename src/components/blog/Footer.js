@@ -1,11 +1,14 @@
 import React from "react"
+import "../../styles/blog/footer.sass"
 
 const Footer = () => {
   return (
     <footer className="notes-footer">
-      <p className="notes-footer__corny-quote">
-        some super quote about whatever
-      </p>
+      <div className="notes-footer__container">
+        <p className="notes-footer__corny-quote">
+          {new Date().getFullYear()} - A blog by Karim Cheurfi
+        </p>
+      </div>
     </footer>
   )
 }
