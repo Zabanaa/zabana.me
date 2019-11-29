@@ -1,0 +1,70 @@
+@import '../utils'
+
+.post-content
+    padding: 4em 0 0
+
+
+.post-content__container
+    max-width: 57em
+    margin: 0 auto
+
+
+.post-content__post
+    color: $black
+    font-family: $text-font
+
+    h2, h3, h4, h5, h6
+        text-decoration: underline
+        margin-bottom: 2rem
+
+    h2
+        font-size: 3em
+        color: $turquoise
+
+        &::before
+            content: "## "
+    
+    h3
+        font-size: 2.7em
+        color: $pink
+    
+
+    h4
+        font-size: 2.5em
+    
+    h5
+        font-size: 2.3em
+    
+    h6
+        font-size: 2.1em
+    
+
+    p
+        font-size: 1.2em
+        margin-bottom: 1.2em 
+        line-height: 1.5
+
+        &:last-child
+            margin-bottom: 0
+
+
+    code
+        background-color: darken($light-gray, 4%)
+        padding: .3em .1em
+
+    a
+        color: $light-purple
+        font-weight: bold
+        text-decoration: underline
+
+    ul 
+        list-style: none
+        margin-bottom: 1.2em
+        padding-left: 2em
+
+        li 
+            font-size: 1.2em
+            margin-bottom: .5em
+
+            &::before
+                content: "* "

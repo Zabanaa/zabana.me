@@ -1,18 +1,15 @@
 import React from "react"
+import "../../styles/blog/post_header.sass"
 
-const PostHeader = () => {
+const PostHeader = ({ title, date }) => {
   return (
     <header className="post-header">
       <div className="post-header__container">
         <div className="post-header__logo">
-          <span>カリム</span>
+          <a href="/notes">カリム</a>
         </div>
-        <div className="post-header__meta">
-          <h1 className="post-title">
-            How to setup a virtual private server from scratch
-          </h1>
-          <span className="post-date">Publish date: 04/23/21</span>
-        </div>
+        <h1 className="post-title">{title}</h1>
+        <span className="post-date">Published on: {date}</span>
       </div>
     </header>
   )
