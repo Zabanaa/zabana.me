@@ -24,11 +24,11 @@ const HomeHeader = () => (
       </p>
       <p>
         I would describe myself as more back-end leaning, though I very much
-        enjoy writing front-end code. As of recent, I've become increasingly
-        interested in{" "}
+        enjoy writing creative front-end code. As of recent, I've become
+        increasingly interested in{" "}
         <strong>DevOps, Linux programming and software architecture</strong>.
-        Besides writing code, <a href="">I write about writing code</a> (super
-        meta !) and document the things I learn along the way. Thanks for
+        Besides writing code, <a href="/notes">I write about writing code</a>{" "}
+        (super meta !) and document the things I learn along the way. Thanks for
         reading !
       </p>
     </article>

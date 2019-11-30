@@ -8,7 +8,7 @@
         padding: 2em 0
 
     +desktop-up
-        padding: 3em 0
+        padding: 3em 0 0
 
 
 .notes-list__container
@@ -16,7 +16,7 @@
     margin: 0 auto
 
     +desktop-up
-        max-width: 57em
+        max-width: 45em
         width: 100%
 
 
@@ -67,11 +67,26 @@
 
 
 .notes-list__post-title a
-    text-decoration: none
     color: $link-blue
     transition: color .3s ease-out
+    position: relative
 
-    &:hover
-        text-decoration: underline
+    +desktop-up
+        &::after
+            content: ""
+            position: absolute
+            left: 0
+            bottom: -5px 
+            width: 100%
+            height: 3px
+            display: block
+            background-color: currentColor
+            transform-origin: left
+            transform: scaleX(0)
+            transition: transform 250ms ease-in-out
+
+        &:hover::after
+            transform: scaleX(1)
+
 
 

@@ -27,7 +27,8 @@
     justify-content: space-evenly
 
     +desktop-up
-        max-width: 57em
+        max-width: 50em
+        width: 100%
         height: 100%
 
 
@@ -45,6 +46,7 @@
     +desktop-up
         text-shadow: 3px 0 $fuschia, -3px 0 $blue
         font-size: 5em
+        margin-bottom: 2rem
 
 
     &:hover
@@ -60,27 +62,34 @@
     animation: fadeInUp 500ms ease-out 200ms forwards
 
     +desktop-up
-        font-size: 2.8em
+        font-size: 2.5em
         line-height: 1.5
+        margin-bottom: 2rem
 
 .post-meta
     display: flex
     flex-direction: column 
 
-    span
-        opacity: 0
-        font-size: 1em
-        align-self: flex-start
-        padding: .5em
-        font-weight: bold
-        margin-bottom: 1em
-        animation: fadeInUp 500ms ease-out forwards
+    +desktop-up
+        flex-direction: row
+        align-items: center
 
-        &:last-child
-            margin-bottom: 0
 
-        +desktop-up
-            font-size: 1.2em
+.post-meta span
+    opacity: 0
+    font-size: 1em
+    align-self: flex-start
+    padding: .5em
+    font-weight: bold
+    margin-bottom: 1em
+    animation: fadeInUp 500ms ease-out forwards
+
+    &:last-child
+        margin-bottom: 0
+
+    +desktop-up
+        font-size: 1.2em
+
 
 span.post-date
     background-color: $fuschia
@@ -89,3 +98,6 @@ span.post-date
 span.post-author
     background-color: $blue
     animation-delay: 700ms
+    
+    +desktop-up
+        margin-left: 1em

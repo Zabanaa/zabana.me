@@ -4,6 +4,12 @@ import Header from "../components/blog/Header"
 import PostList from "../components/blog/PostList"
 import Footer from "../components/blog/Footer"
 import { graphql } from "gatsby"
+import { Helmet } from "react-helmet"
+
+const metadata = {
+  title: "Blog - Karim Cheurfi - Full Stack Software Developer",
+  desc: `Articles written by Karim Cheurfi. Python, Node.js and Golang mostly.`,
+}
 
 const NotesPage = ({
   data: {
@@ -14,6 +20,10 @@ const NotesPage = ({
 
   return (
     <Layout>
+      <Helmet>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.desc} />
+      </Helmet>
       <Header />
       <PostList posts={Posts} />
       <Footer />
