@@ -5,8 +5,11 @@
 
 
 .post-content__container
-    max-width: 57em
     margin: 0 auto
+    max-width: 85%
+
+    +desktop-up
+        max-width: 57em
 
 
 .post-content__post
@@ -15,56 +18,72 @@
 
     h2, h3, h4, h5, h6
         text-decoration: underline
-        margin-bottom: 2rem
+        margin-bottom: 1.2rem
 
     h2
-        font-size: 3em
         color: $turquoise
+        font-size: 2em
 
         &::before
             content: "## "
+
+        +desktop-up
+            font-size: 3em
     
     h3
-        font-size: 2.7em
+        font-size: 1.7em
         color: $pink
     
+        +desktop-up
+            font-size: 2.7em
 
     h4
-        font-size: 2.5em
+        font-size: 1.5em
+        +desktop-up
+            font-size: 2.5em
     
     h5
-        font-size: 2.3em
+        font-size: 1.3em
+
+        +desktop-up
+            font-size: 2.3em
     
     h6
-        font-size: 2.1em
-    
+        font-size: 1.2em
+
+        +desktop-up
+            font-size: 2.1em
 
     p
-        font-size: 1.2em
-        margin-bottom: 1.2em 
+        font-size: 1.1em
+        margin-bottom: 1em 
         line-height: 1.5
+
+        +desktop-up
+            font-size: 1.2em
+            margin-bottom: 1.2em 
+            line-height: 1.5
 
         &:last-child
             margin-bottom: 0
-
-
-    code
-        background-color: darken($light-gray, 4%)
-        padding: .3em .1em
 
     a
         color: $light-purple
         font-weight: bold
         text-decoration: underline
+    
+    pre
+        margin: 2em 0
 
     ul 
         list-style: none
-        margin-bottom: 1.2em
-        padding-left: 2em
+        margin-top: 2.5em
+        margin-bottom: 2.5em
+        padding-left: 1em
 
         li 
             font-size: 1.2em
-            margin-bottom: .5em
+            margin-bottom: 1rem
 
             &::before
                 content: "* "
