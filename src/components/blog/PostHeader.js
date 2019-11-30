@@ -9,7 +9,10 @@ const PostHeader = ({ title, date }) => {
           <a href="/notes">カリム</a>
         </div>
         <h1 className="post-title">{title}</h1>
-        <span className="post-date">Published on: {date}</span>
+        <div className="post-meta">
+          <span className="post-date">Published on: {date}</span>
+          <span className="post-author">Written by: Karim Cheurfi</span>
+        </div>
       </div>
     </header>
   )

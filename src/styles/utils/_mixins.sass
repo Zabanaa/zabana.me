@@ -6,3 +6,13 @@
     @for $i from 0 through $steps
         #{percentage($i*(1/$steps))}
             clip: rect(random(10 * 40)+px, 4000px, random(10 * 60)+px, 0px)
+
+
+@keyframes fadeInUp
+    0%
+        opacity: 0        
+        transform: translateY(100px)
+    100%
+        transform: translateY(0)
+        opacity: 1
+        

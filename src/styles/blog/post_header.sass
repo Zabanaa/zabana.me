@@ -3,45 +3,89 @@
 
 .post-header
     background-color: $black
-    height: 100vh
+    height: 80vh
     color: white
     font-family: $text-font
-    padding: 6em 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    +desktop-up
+        padding: 6em 0
+        height: 100vh
 
 
 .post-header__container
-    max-width: 57em
+
+    max-width: 85%
+    height: 85%
     margin: 0 auto
 
     display: flex
     flex-direction: column
     justify-content: space-evenly
-    height: 100%
+
+    +desktop-up
+        max-width: 57em
+        height: 100%
 
 
 .post-header__logo
     font-family: $logo-font
     font-weight: bold
-    align-self: flex-start
-    display: inline-block
-    font-size: 5em
-    text-shadow: 3px 0 $fuschia, -3px 0 $blue
-    transition: text-shadow .3s ease-out
     line-height: 1
+    font-size: 3em
+    text-shadow: 2px 0 $fuschia, -2px 0 $blue
+
+    align-self: flex-start
+    animation: fadeInUp 500ms ease-out
+    transition: text-shadow .3s ease-out
+
+    +desktop-up
+        text-shadow: 3px 0 $fuschia, -3px 0 $blue
+        font-size: 5em
+
 
     &:hover
         text-shadow: 3px 0 $blue, -3px 0 $fuschia
 
 
 .post-title
-    font-size: 2.8em
+    font-size: 2em
     line-height: 1.5
+    opacity: 0
+
     text-decoration: underline
+    animation: fadeInUp 500ms ease-out 200ms forwards
 
+    +desktop-up
+        font-size: 2.8em
+        line-height: 1.5
 
-.post-date
-    font-size: 1.2em
+.post-meta
+    display: flex
+    flex-direction: column 
+
+    span
+        opacity: 0
+        font-size: 1em
+        align-self: flex-start
+        padding: .5em
+        font-weight: bold
+        margin-bottom: 1em
+        animation: fadeInUp 500ms ease-out forwards
+
+        &:last-child
+            margin-bottom: 0
+
+        +desktop-up
+            font-size: 1.2em
+
+span.post-date
     background-color: $fuschia
-    align-self: flex-start
-    padding: .5em
-    font-weight: bold
+    animation-delay: 600ms
+
+span.post-author
+    background-color: $blue
+    animation-delay: 700ms
