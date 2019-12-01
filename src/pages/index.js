@@ -13,7 +13,6 @@ import "../styles/home/home.sass"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-
     <HomeHeader />
     <Blurb />
     <ProjectsList />
