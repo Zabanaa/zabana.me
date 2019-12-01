@@ -1,0 +1,61 @@
+.cv-open-source
+    height: 400vh
+    margin-top: 1em
+
+
+.cv-open-source__all-items
+    display: flex
+    justify-content: space-between
+
+.cv-open-source__item
+    flex-basis: 33%
+
+.cv-open-source__item ul
+    list-style: none
+
+
+.cv-open-source__item__title
+    position: relative
+    font-size: 1.7em
+    font-weight: bold
+    margin-bottom: .4rem
+    display: inline-block
+    color: $fuschia
+
+    &::before
+        content: ""
+        position: absolute
+        bottom: -3px 
+        left: 0
+        width: 100%
+        height: 2.5px
+        background-color: currentColor
+        transform: scaleX(0)
+        transform-origin: left
+        transition: transform 250ms ease-in-out
+
+    &:hover::before
+        transform: scaleX(1)
+
+
+.cv-open-source__item__desc
+    font-size: 1.2em
+    line-height: 1.3
+    margin-bottom: .5rem
+
+
+.cv-open-source__item__stack
+    display: flex
+    flex-wrap: wrap
+
+
+.cv-open-source__item__stack__tech
+    padding: .5em
+    background-color: $light-purple
+    color: white
+    margin-right: .5em
+    white-space: nowrap
+    margin-top: .5rem
+    font-weight: bold
+    border-radius: 3px
+    font-size: .9em
