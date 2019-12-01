@@ -3,15 +3,12 @@ import Layout from "../components/layout"
 import Header from "../components/blog/Header"
 import PostList from "../components/blog/PostList"
 import Footer from "../components/blog/Footer"
+import SEO from "../components/seo"
 import { graphql } from "gatsby"
-import { Helmet } from "react-helmet"
 
 import "../styles/blog/blog.home.sass"
 
-const metadata = {
-  title: "Blog - Karim Cheurfi - Full Stack Software Developer",
-  desc: `Articles written by Karim Cheurfi. Python, Node.js and Golang mostly.`,
-}
+const metaDescription = `Articles written by Karim Cheurfi. Python, Node.js and Golang mostly.`
 
 const NotesPage = ({
   data: {
@@ -22,10 +19,10 @@ const NotesPage = ({
 
   return (
     <Layout>
-      <Helmet>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.desc} />
-      </Helmet>
+      <SEO
+        title="Blog"
+        meta={{ name: "description", content: metaDescription }}
+      />
       <Header />
       <PostList posts={Posts} />
       <Footer />

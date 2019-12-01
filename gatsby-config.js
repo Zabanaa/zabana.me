@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Karim Cheurfi`,
-    description: `This is a super cool meta description that I will have to change later on`,
-    author: "",
+    title: `Karim Cheurfi - Full Stack Software Developer`,
+    description: `The portfolio website of Karim Cheurfi, python and 
+  node.js software developer currently based in Paris, France.`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
