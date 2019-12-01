@@ -1,5 +1,4 @@
 import React from "react"
-import "../../styles/blog/footer.sass"
 
 const Footer = () => {
   return (

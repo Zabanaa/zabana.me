@@ -1,5 +1,4 @@
 import React from "react"
-import "../../styles/blog/post_content.sass"
 
 const PostContent = ({ content }) => {
   return (

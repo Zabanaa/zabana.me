@@ -1,5 +1,4 @@
 import React from "react"
-import "../../styles/blog/post-list.sass"
 import PostLink from "./PostLink"
 
 const PostList = ({ posts }) => {

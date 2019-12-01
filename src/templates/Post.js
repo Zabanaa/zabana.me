@@ -6,6 +6,8 @@ import PostContent from "../components/blog/PostContent"
 import Footer from "../components/blog/Footer"
 import { Helmet } from "react-helmet"
 
+import "../styles/blog/blog.post.sass"
+
 export default function Template({ data }) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark

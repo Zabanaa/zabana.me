@@ -1,5 +1,4 @@
 import React from "react"
-import "../../styles/home/header.sass"
 
 const HomeHeader = () => (
   <header className="home__header-splash">

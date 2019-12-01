@@ -1,5 +1,4 @@
 import React from "react"
-import "../../styles/home/contact.sass"
 
 const Contact = () => {
   return (

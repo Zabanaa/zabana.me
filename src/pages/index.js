@@ -8,6 +8,7 @@ import Footer from "../components/home/Footer"
 import { Helmet } from "react-helmet"
 
 import "../styles/emojis.css"
+import "../styles/home/home.sass"
 
 const metadata = {
   title: "Karim Cheurfi - Full Stack Software Developer",

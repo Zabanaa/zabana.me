@@ -6,6 +6,8 @@ import Footer from "../components/blog/Footer"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 
+import "../styles/blog/blog.home.sass"
+
 const metadata = {
   title: "Blog - Karim Cheurfi - Full Stack Software Developer",
   desc: `Articles written by Karim Cheurfi. Python, Node.js and Golang mostly.`,

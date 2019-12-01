@@ -1,5 +1,4 @@
 import React from "react"
-import "../../styles/blog/post_header.sass"
 
 const PostHeader = ({ title, date }) => {
   return (

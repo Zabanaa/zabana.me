@@ -1,7 +1,6 @@
 import React from "react"
 import Project from "./Project"
 import { useStaticQuery, graphql } from "gatsby"
-import "../../styles/home/projects_list.sass"
 
 const ProjectsList = () => {
   const projects = useStaticQuery(graphql`
