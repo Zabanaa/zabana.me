@@ -2,7 +2,7 @@ import React from "react"
 
 const Header = () => {
   return (
-    <header className="cv-header">
+    <header className="cv-header cv-subsection">
       <div className="cv-header__logo">
         <span>カリム</span>
       </div>

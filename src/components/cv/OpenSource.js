@@ -42,7 +42,7 @@ const OpenSource = () => {
     .map(transformProjectDescription)
 
   return (
-    <section className="cv-open-source">
+    <section className="cv-open-source cv-subsection">
       <h2 className="cv-heading">Open Source</h2>
       <div className="cv-open-source__all-items">
         {openSourceProjects.map(proj => (

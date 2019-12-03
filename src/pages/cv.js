@@ -20,9 +20,9 @@ const CVPage = () => {
         <Header />
         <Blurb />
         <OpenSource />
-        {/* <Education />
+        <Education />
         <Technologies />
-        <Experience /> */}
+        <Experience />
         {/* <footer>this is going to be the footer</footer> */}
       </div>
     </Layout>
