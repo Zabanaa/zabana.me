@@ -4,9 +4,9 @@ const Blurb = () => {
   return (
     <section className="cv-blurb cv-subsection">
       <p>
-        A software engineer who has been programming and making things for the
-        web since the early 2000s, passionate about designing & building great
-        products from the ground up.
+        A product oriented software developer, I'm looking to join a friendly
+        and passionate team, excited about building great products, either as a
+        freelancer or full-time member. In Paris, or elsewhere.
       </p>
     </section>
   )
