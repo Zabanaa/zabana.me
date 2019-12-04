@@ -36,7 +36,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
 
   const jobs = [
     {
-      date: "2019 / Present",
+      date: "2019/Present",
       position: "Founder",
       company: "Himitsu.co",
       about:
@@ -53,7 +53,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       ],
     },
     {
-      date: "2018 / 2019",
+      date: "2018/2019",
       position: "Consultant",
       company: "LinkValue",
       about:
@@ -70,7 +70,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       ],
     },
     {
-      date: "2016 / 2017",
+      date: "2016/2017",
       position: "Django Developer / Server Admin",
       company: "SuperTesteur (RIP)",
       about:
@@ -85,7 +85,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       about:
         "Codebar is non-profit whose goal is to empower under-represented groups learn software development through free workshops and meetups. For the brief time I spent there, I helped students with the lessons and their projects.",
       location: "Brighton, UK",
-      stack: [],
+      stack: ["HTML", "CSS", "SASS", "Javascript", "Git", "Node.js", "MacOS"],
     },
     {
       date: "2015",
@@ -158,7 +158,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       description:
         "is a d-bus command line interface for NetworkManager. Can you guess the language ?",
       url: "https://github.com/Zabanaa/wypy",
-      stack: ["Python 3", "CLI", "D-Bus"],
+      stack: ["Python 3", "CLI", "D-Bus", "Linux"],
       openSource: true,
     },
   ]

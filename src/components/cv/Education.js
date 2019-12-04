@@ -5,10 +5,10 @@ const Education = () => {
     <section className="cv-education cv-subsection">
       <h2 className="cv-heading">Education</h2>
 
-      <ul>
+      <ul className="cv-education__list">
         <li className="cv-education__item">
           <span className="cv-education__date">
-            2017 / 2018 - MIT OpenCourseware
+            2017/2018 - MIT OpenCourseWare
           </span>
           <ul>
             <li>18.01 Single variable calculus </li>

@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const transformProjectDescription = project => {
   switch (project.title) {
     case "Molly":
-      project.description = "A lightweight TCP port scanner."
+      project.description = "A lightweight multi-threaded TCP port scanner."
       break
 
     case "Chevette":
@@ -13,7 +13,7 @@ const transformProjectDescription = project => {
       break
 
     case "WyPy":
-      project.description = "A NetworkManager D-Bus client."
+      project.description = "A D-Bus client for NetworkManager."
       break
   }
 

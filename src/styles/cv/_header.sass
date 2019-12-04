@@ -1,34 +1,50 @@
+
 .cv-header__logo
+    font-size: 2.2em
+    font-family: $logo-font
+    font-weight: bold
+    background-color: $black
+    color: white
+    display: inline-block
+    padding: 0rem 1rem
+    line-height: normal
+    text-shadow: 2px 0 $fuschia, -2px 0 $blue
 
     +desktop-up
         font-size: 4em
-        font-weight: bold
-        font-family: $logo-font
-        background-color: $black
-        color: white
-        display: inline-block
         text-shadow: 3px 0 $fuschia, -3px 0 $blue
-        padding: 0rem 1rem
-        line-height: normal
         margin-bottom: 2rem
 
 
 .cv-header__about
     list-style: none
+    padding-top: 1.3em
+
+    +desktop-up
+        padding-top: 0
 
 
 .cv-header__about__item
     display: flex
     margin-bottom: .5em
+    align-items: center
 
     i 
-        +size(19px)
+        +size(16px)
 
     span
         margin-left: 8px
-        font-size: 1.2em
+        font-size: 1.05em
 
         a
             font-weight: bold
             color: $light-purple
             text-decoration: underline
+
+    +desktop-up
+
+        i 
+            +size(19px)
+
+        span
+            font-size: 1.2em

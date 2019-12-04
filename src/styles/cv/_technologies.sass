@@ -1,29 +1,51 @@
 .cv-technologies__category
     display: flex
-    align-items: center
-    margin-bottom: 1.5em
+    flex-direction: column
+    margin-bottom: 1em
 
     &:last-child
         margin-bottom: 0
 
+    +desktop-up
+        flex-direction: row
+        align-items: center
+        margin-bottom: 1.5em
+
+
 .cv-technologies__title
-    font-size: 1.2em
-    font-weight: bold
-    color: $fuschia
+    font-size: 1.1em
+
+    +desktop-up
+        margin-bottom: 0
+        font-weight: bold
+        color: $fuschia
 
 
 .cv-technologies__category__all
     display: flex
-    justify-content: space-around
-    padding: 0 1em
+    flex-wrap: wrap
+
+    +desktop-up
+        justify-content: space-around
+        padding: 0 1em
+    
+    &:last-child > .cv-technologies__category__item
+        margin-bottom: 0
+        
 
 
 .cv-technologies__category__item
     background-color: $light-purple
     color: white
     padding: .5em
-    font-size: .9em
+    font-size: .75em
     font-weight: bold
+    margin-right: .5rem
+    margin-bottom: .5rem
+    margin-top: .7rem
     border-radius: 3px
-    margin-right: 1em
-    
+
+    +desktop-up
+        font-size: .9em
+        margin-top: 0
+        

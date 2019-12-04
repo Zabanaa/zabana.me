@@ -1,20 +1,37 @@
-.cv-education
-    margin-top: 1em
+.cv-education__list
+    margin-top: 1.22em
+
+    +desktop-up
+        margin-top: 2.22em
 
 
 .cv-education__item
-    margin-bottom: 2em
+    margin-bottom: 1.5em
+
+    &:last-child
+        margin-bottom: 0
+
+    +desktop-up
+        margin-bottom: 2em
 
 .cv-education__date 
     font-size: 1.2em
     font-weight: bold
+    color: $light-purple
+
+    +desktop-up
+        font-size: 1.25em
 
 .cv-education__item ul 
-    margin-left: 1em
+    margin-left: 1rem
 
     li
+        font-size: 1.05rem
         display: block
-        margin-top: .7em
+        margin-top: .7rem
+
+        +desktop-up
+            font-size: 1.1em
 
 
 
