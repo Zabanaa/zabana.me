@@ -207,7 +207,7 @@ Also, if you're coming from a language that handles async tasks natively (like
 golang), you'll be right at home.
 
 If you've made it this far, thanks for reading ! If you spot anything that
-should be corrected, hit me up on twitter I'm [@zabanaa](https://twitter.com/zabanaa).
+should be corrected, hit me up on twitter I'm [@zabanaa](https://twitter.com/zabanaa_).
 
 As always: stay cyber, stay punk.
 
