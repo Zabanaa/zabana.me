@@ -1,129 +1,15 @@
-@import '../utils'
-
 .home__blurb
-    padding: 2em 0
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-
-    +iphone678-landscape
-        padding: 3em 0
-
-    +ipad
-        padding: 3em 0
-
-    +ipad-landscape
-        padding: 4em 0
-
-    +desktop-up
-        padding: 0
-        height: 100vh
+    margin: 2em 0
     
 
 .home__blurb__content
-    max-width: 85%
-    margin: 0 auto
+    max-width: 50em
     
-    +ipad
-        max-width: 90%
-    
-    +ipad-landscape
-        max-width: 54em
 
-    +iphone678-landscape
-        max-width: 90%
-
-    +desktop-up
-        max-width: 57em
-    
 .home__blurb__content p
     font-family: $text-font
-    font-size: 1.1em
-    line-height: 1.6
-    margin-bottom: 2em
+    font-size: 1.2em
+    line-height: 1.9
 
-    &:last-child
-        margin-bottom: 0
-
-    +iphone678-landscape
-        font-size: 1.1em
-        
-    +ipad
-        font-size: 1.1em
-        line-height: 1.7
-
-    +ipad-landscape
-        font-size: 1.2em
-        line-height: 1.7
-
-    +desktop-up
-        font-size: 1.29em
-        line-height: 1.8
-        margin-bottom: 2em
-
-    .strike
-        text-decoration: line-through
-    
-.home__blurb__content a
-    color: $light-purple
-    font-weight: bold
-    
-.blurb__picture-link
-    font-weight: bold
-    cursor: pointer
-    position: relative
-
-    &.pizza
-        color: $fuschia
-
-    &.paris
-        color: $blue
-
-    &:hover
-        figure 
-            visibility: visible
-            opacity: 1
-
-
-.blurb__picture-link__figure
-    visibility: hidden
-    opacity: 0
-    position: absolute
-    top: -110px
-    left: -4em 
-    max-width: 150px
-    width: 150px
-    height: 100px
-    max-height: 100px
-    padding: 0
-    margin: 0
-    border-width: 2px
-    border-style: solid
-    border-radius: 5px 
-    transition: visibility 0s, opacity .2s ease-in
-
-    &.paris-pic
-        left: -5em
-    
-    +ipad
-        width: 200px
-        height: 150px
-        max-height: 150px
-        left: 3em
-        top: -160px
-
-    +desktop-up
-        width: 300px
-        height: 200px
-        max-height: 200px
-        top: -240px
-        left: 1em
-        border-width: 3px
-
-    img
-        display: block
-        max-width: 100%
-        width: 100%
-        height: 100%
-    
+    strong
+        color: $turquoise

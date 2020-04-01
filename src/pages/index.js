@@ -8,7 +8,8 @@ import Footer from "../components/home/Footer"
 import SEO from "../components/seo"
 
 import "../styles/emojis.css"
-import "../styles/home/home.sass"
+import "../styles/reset.css"
+import "../styles/main.sass"
 
 const IndexPage = () => (
   <Layout>

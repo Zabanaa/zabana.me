@@ -116,31 +116,37 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
 
   const projects = [
     {
-      title: "Himitsu.co",
-      description:
-        "is a secure online journal built with django and react. You should try it.",
-      url: "https://himitsu.co",
-      stack: [
-        "Python 3",
-        "Django",
-        "GitlabCI",
-        "React",
-        "Docker",
-        "PostgreSQL",
-      ],
+      title: "Chronicle",
+      description: "is a secure private journal built using Flask and React.",
+      url: "https://usechronicle.com",
+      stack: ["Python 3", "Flask", "GitlabCI", "React", "Docker", "PostgreSQL"],
+      openSource: false,
+    },
+    {
+      title: "Barrd",
+      description: "is a personal project management solution (Flask x React).",
+      url: "https://barrd.co",
+      stack: ["Python 3", "Flask", "GitlabCI", "React", "Docker", "PostgreSQL"],
+      openSource: false,
+    },
+    {
+      title: "KarimCheurfi.com",
+      description: "is my photography portfolio.",
+      url: "https://barrd.co",
+      stack: ["Python 3", "Flask", "GitlabCI", "React", "Docker", "PostgreSQL"],
       openSource: false,
     },
     {
       title: "Hakka-Nyusu.xyz",
       description:
-        "is what HackerNews would look like if it was run by a cyberpunk nerd who knows ReactJS.",
+        "is what HackerNews would look like if it was created by a cyberpunk nerd.",
       url: "https://hakka-nyusu.xyz",
       stack: ["React", "SASS"],
       openSource: false,
     },
     {
       title: "Chevette",
-      description: "is a python 3 static site generator I'm working on.",
+      description: "is a python static site generator I'm working on.",
       url: "https://github.com/Zabanaa/chevette",
       stack: ["Python 3", "Jinja2", "CLI"],
       openSource: true,
@@ -148,7 +154,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     {
       title: "Molly",
       description:
-        "is a multithreaded tcp port scanner that I wrote in python 3.",
+        "is a lightweight multithreaded port scanner I wrote in Python.",
       url: "https://github.com/Zabanaa/molly",
       stack: ["Python 3", "CLI", "Sockets", "Multi-Threading"],
       openSource: true,
@@ -156,7 +162,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     {
       title: "WyPy",
       description:
-        "is a d-bus command line interface for NetworkManager. Can you guess the language ?",
+        "is a d-bus command line interface for NetworkManager. (Python)",
       url: "https://github.com/Zabanaa/wypy",
       stack: ["Python 3", "CLI", "D-Bus", "Linux"],
       openSource: true,

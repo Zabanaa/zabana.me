@@ -1,8 +1,5 @@
 import React from "react"
-import "../styles/layout.sass"
 
-const Layout = ({ children }) => (
-  <main className="home_body_container">{children}</main>
-)
+const Layout = ({ children }) => <main className="home">{children}</main>
 
 export default Layout
