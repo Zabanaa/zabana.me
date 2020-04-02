@@ -4,13 +4,7 @@ const Footer = () => {
   return (
     <footer className="home-footer">
       <div className="home-footer__container">
-        <span className="home-footer__logo" data-logo="カリム">
-          {" "}
-          カリム
-        </span>
-        <p className="home-footer__about">
-          Made while listening to Eddie Murphy's albums.
-        </p>
+        <p className="home-footer__about">Made while in quarantine.</p>
       </div>
     </footer>
   )

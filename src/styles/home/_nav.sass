@@ -1,0 +1,34 @@
+.main-nav
+    max-width: 300px
+    margin: 2rem 0 
+
+
+.main-nav__links
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+
+.main-nav__links__item
+    font-weight: 700
+    font-size: 1.2em
+    position: relative
+    transition: color 150ms ease-in-out
+
+    &::after
+        content: ""
+        position: absolute
+        display: block
+        left: 0
+        bottom: -2px
+        width: 100%
+        height: 2px
+        background-color: currentColor
+        transition: transform 150ms ease-in-out
+
+    &:hover
+
+        color: $pink
+
+        &:after
+            transform: translateY(4px)
