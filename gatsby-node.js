@@ -132,7 +132,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     {
       title: "KarimCheurfi.com",
       description: "is my photography portfolio.",
-      url: "https://barrd.co",
+      url: "https://karimcheurfi.com",
       stack: ["Python 3", "Flask", "GitlabCI", "React", "Docker", "PostgreSQL"],
       openSource: false,
     },

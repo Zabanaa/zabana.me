@@ -6,9 +6,16 @@ const PostLink = ({ post }) => {
       <h3 className="notes-list__post-title">
         <a href={post.frontmatter.path}>{post.frontmatter.title}</a>
       </h3>
-      <span className="notes-list__post-meta">
-        Published on: {post.frontmatter.date}
-      </span>
+      <ul className="notes-list__meta">
+        <li>
+          <i className="em-svg em-spiral_calendar_pad"></i>
+          {post.frontmatter.date}
+        </li>
+        <li>
+          <i className="em-svg em-clock1"></i>
+          {post.fields.readingTime.text}
+        </li>
+      </ul>
     </li>
   )
 }

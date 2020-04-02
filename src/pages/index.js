@@ -12,11 +12,11 @@ import "../styles/reset.css"
 import "../styles/main.sass"
 import Nav from "../components/home/Nav"
 
-const IndexPage = () => (
+const IndexPage = props => (
   <Layout>
     <SEO title="Home" />
     <HomeHeader />
-    <Nav />
+    <Nav {...props} />
     <Blurb />
     <ProjectsList />
     <Random />

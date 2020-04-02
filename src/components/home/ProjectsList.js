@@ -23,6 +23,7 @@ const ProjectsList = () => {
           {projects.allProject.nodes.map((project, idx) => {
             return (
               <Project
+                key={idx}
                 url={project.url}
                 title={project.title}
                 description={project.description}
