@@ -15,7 +15,7 @@ const Nav = () => {
             )}
           </li>
           <li className="main-nav__links__item">
-            <Link to="/notes">/cv</Link>
+            <Link to="/cv">/cv</Link>
           </li>
           <li className="main-nav__links__item">
             <a href="mailto:karim.cheurfi@gmail.com">/e-mail</a>

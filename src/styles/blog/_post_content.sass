@@ -8,8 +8,12 @@
 
     h2, h3, h4, h5, h6
         margin-bottom: 1.2rem
-        font-size: 2em
+        font-size: 1.5em
+        line-height: 1.8
         font-weight: 700
+
+        +desktop-up
+            font-size: 2em
 
     em 
         color: $yellow
@@ -19,9 +23,13 @@
     
 
     p
-        font-size: 1.2em
+        font-size: 1.1em
+        line-height: 1.8
         margin-bottom: 2rem
-        line-height: 1.6
+
+        +desktop-up 
+            font-size: 1.2em
+            line-height: 1.6
 
     a
         color: $turquoise

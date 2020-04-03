@@ -4,7 +4,14 @@
 @import './blog/blog.post'
 
 .home
-    padding: 2em 3em
+    padding: 2em 1em 
     background-color: $black
     font-family: $text-font
     color: white
+
+    &.cv
+        background-color: #fff
+        color: $black
+
+    +desktop-up
+        padding: 2em 3em

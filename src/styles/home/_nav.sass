@@ -1,6 +1,6 @@
 .main-nav
-    max-width: 300px
     margin: 2rem 0 
+    max-width: 300px
 
 
 .main-nav__links
@@ -11,9 +11,11 @@
 
 .main-nav__links__item
     font-weight: 700
-    font-size: 1.2em
+    font-size: 1.1em
     position: relative
     transition: color 150ms ease-in-out
+    +desktop-up
+        font-size: 1.2em
 
     &::after
         content: ""
