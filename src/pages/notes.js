@@ -23,7 +23,7 @@ const NotesPage = ({
         meta={[{ name: "description", content: metaDescription }]}
       />
       <Header />
-      <Nav />
+      <Nav location={location} />
       <PostList posts={Posts} />
       <Footer />
     </Layout>

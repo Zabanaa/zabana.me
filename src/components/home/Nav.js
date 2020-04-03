@@ -1,14 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const Nav = () => {
-  const path = window.location.pathname
+const Nav = ({ location }) => {
+  const path = location.pathname
   return (
     <nav className="main-nav">
       <div className="container">
         <ul className="main-nav__links">
           <li className="main-nav__links__item">
-            {path === "/" ? (
+            {path && path === "/" ? (
               <Link to="/notes">/articles</Link>
             ) : (
               <Link to="/">/home</Link>
