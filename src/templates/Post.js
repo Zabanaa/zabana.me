@@ -4,6 +4,7 @@ import PostHeader from "../components/blog/PostHeader"
 import PostContent from "../components/blog/PostContent"
 import Footer from "../components/blog/Footer"
 import SEO from "../components/seo"
+import Nav from "../components/home/Nav"
 import { graphql } from "gatsby"
 
 import "../styles/blog/blog.post.sass"

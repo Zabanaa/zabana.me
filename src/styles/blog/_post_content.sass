@@ -1,93 +1,44 @@
-@import '../utils'
-
 .post-content
-    padding: 4em 0 0
-
-
-.post-content__container
-    margin: 0 auto
-    max-width: 85%
-
-    +desktop-up
-        max-width: 45em
+    max-width: 50em 
 
 
 .post-content__post
-    color: $black
-    font-family: $text-font
+
+    margin-top: 2rem
 
     h2, h3, h4, h5, h6
-        text-decoration: underline
         margin-bottom: 1.2rem
-
-    h2
-        color: $turquoise
         font-size: 2em
+        font-weight: 700
 
-        &::before
-            content: "## "
+    em 
+        color: $yellow
 
-        +desktop-up
-            font-size: 2.2em
-    
-    h3
-        font-size: 1.7em
-        color: $pink
-    
-        +desktop-up
-            font-size: 2em
-
-    h4
-        font-size: 1.5em
-        +desktop-up
-            font-size: 1.8em
-    
-    h5
-        font-size: 1.3em
-
-        +desktop-up
-            font-size: 1.5em
-    
-    h6
-        font-size: 1.4em
-
-        +desktop-up
-            font-size: 2.1em
-    
-    em
-        color: $light-purple
-
-    p
-        font-size: 1.1em
-        margin-bottom: 1em 
-        line-height: 1.6
-
-        +desktop-up
-            font-size: 1.3em
-            margin-bottom: 1.2em 
-            line-height: 1.5
-
-        &:last-child
-            margin-bottom: 0
-
-    a
-        color: $light-purple
-        font-weight: bold
-        text-decoration: underline
-    
     pre
         margin: 2em 0
     
+
+    p
+        font-size: 1.2em
+        margin-bottom: 2rem
+        line-height: 1.6
+
+    a
+        color: $turquoise
+        font-weight: bold
+        text-decoration: underline
+
     ol
         padding-left: 3em
 
+
     ul, ol
-        margin: 2.5em 0
+        margin: 2rem 0
 
         li 
-            font-size: 1.3em
-            margin-bottom: 1rem
-            line-height: 1.5
+            font-size: 1.2em
+            margin-bottom: 1.5rem
+            line-height: 1.6
 
     ul 
         list-style: none
