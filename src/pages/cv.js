@@ -10,9 +10,9 @@ import Experience from "../components/cv/Experience"
 
 import "../styles/cv/cv.sass"
 
-const CVPage = () => {
+const CVPage = props => {
   return (
-    <Layout>
+    <Layout {...props}>
       <Helmet>
         <title>CV / Resume - Karim Cheurfi</title>
       </Helmet>

@@ -13,7 +13,7 @@ import "../styles/main.sass"
 import Nav from "../components/home/Nav"
 
 const IndexPage = props => (
-  <Layout>
+  <Layout {...props}>
     <SEO title="Home" />
     <HomeHeader />
     <Nav {...props} />

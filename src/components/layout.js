@@ -1,8 +1,8 @@
 import React from "react"
 
-const Layout = ({ children }) => (
-  <main className={"home" + (window.location.pathname === "/cv" ? " cv" : " ")}>
-    {children}
+const Layout = props => (
+  <main className={"home" + (props.location.pathname === "/cv" ? " cv" : " ")}>
+    {props.children}
   </main>
 )
 
