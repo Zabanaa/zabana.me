@@ -10,6 +10,7 @@ import { graphql } from "gatsby"
 const metaDescription = `Articles written by Karim Cheurfi. Python, Node.js and Golang mostly.`
 
 const NotesPage = ({
+  location,
   data: {
     allMarkdownRemark: { edges },
   },
